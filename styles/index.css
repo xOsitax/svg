@@ -48,3 +48,23 @@ p {
   font-size: 1.2rem;
   color: #fff;
 }
+
+img {
+  object-fit: cover;
+  animation-name: Rotate;
+  animation-duration: 1s;
+
+  transition: width 3s, height 3s, transform 3s;
+}
+/*Puts the image upside down when hover*/
+img:hover {
+  transform: rotate(180deg);
+}
+@keyframes Rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
